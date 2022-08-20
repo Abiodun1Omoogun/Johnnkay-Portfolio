@@ -13,10 +13,11 @@ body {
     background: #ffffff;
     width: 900px;
     height: 100vh;
+    /* max-width: 1000px; */
 }
 
 /* Header Navigation Tabs */
-header {
+.topnav {
     /* overflow: hidden; */
     width: 100%;
     background: #ffffff;
@@ -24,18 +25,12 @@ header {
     position: relative;
     left: 30px;
     top: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
     align-self: center;
-    transform: translate(65%, 50%);
+    transform: translate(85%, 50%);
 }
 
-header nav ul li {
-    list-style-type: none;
-}
-
-header nav ul li a {
+.topnav a {
     float: left;
     text-align: center;
     text-decoration: none;
@@ -47,16 +42,20 @@ header nav ul li a {
     margin: -50px 65px 50px 30px;
 }
 
-header nav ul li a.active {
+.topnav a.active {
     color: #000;
 }
 
+.topnav a.menu-icon {
+    display: none;
+}
+
 main {
-    width: 100%;
+    width: 200%;
     height: 50vh;
     background: #ffffff;
     color: #333533;
-    transform: translate(0%, 90%);
+    transform: translate(-50%, 90%);
 }
 
 /* Home Page Styling */
@@ -67,24 +66,26 @@ main {
     justify-content: center;
     align-items: center;
     height: 60px;
+    width: -40%;
 }
 
 .rectangle {
     background: #000;
     height: 55vh;
-    width: 40%;
+    width: 90%;
     padding: 30px;
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.05);
 }
 
 .content {
-    margin: -54px 50px -39px;
+    margin: -54px 0px -39px 0px;
+    transform: translate(20%, 0%);
 }
 
 /* Heading Styling  */
 h1 {
     color: #000;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 500;
     line-height: 79px;
 }
@@ -97,27 +98,32 @@ h3 {
 }
 
 p {
-    font-size: 19px;
+    font-size: 21px;
     color: #000;
     font-weight: 500;
     line-height: 29px;
 }
 
 .img {
-    width: 3%;
-    margin: -55px 0px 0px;
+    width: 0%;
+    margin: -55px 0px 0px 12px;
+    position: relative;
+    left: 20%;
+    top: 0;
+    transform: translate(10%, 5%);
     /* height: 4vh; */
 }
 
 /* Project Page Styling */
 .container1 {
-    width: 150%;
+    width: 98%;
     height: 100vh;
-    margin: -190px 80px 5px 90px;
+    margin: -190px -790px 5px 890px;
     display: flex;
-    flex: 9 0 9;
+    flex: 1 0 9;
     justify-content: space-between;
     align-content: space-between;
+    flex-direction: row;
     /* text-align: center; */
 }
 
@@ -128,18 +134,21 @@ p {
 }
 
 .container1 .img3 {
-    margin: -75px 57px 9px -89px;
+    margin: -295px 57px 9px -19px;
 }
 
 .container1 .img4 {
-    width: 2%;
-    margin: -16px 459px 50px 25px;
+    margin: -196px 159px 50px 145px;
 }
 
 aside {
-    width: 50%;
-    margin: 0 -90px 0 150px;
+    width: 35%;
+    margin: 45px 0px 0 80px;
     font-size: 23px;
+    position: relative;
+    left: -6%;
+    top: -30%;
+    
 }
 
 aside ul p {
@@ -148,37 +157,41 @@ aside ul p {
 
 aside .btn {
     margin: 20px 45px 0px 6px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    width: 15%;
-    height: 6vh;
+    width: 16%;
+    height: 7vh;
     border: 4px solid black;
 }
 
 aside .btn1 {
     margin: 30px 45px 0px 6px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     width: 25%;
-    border: 4px solid black;
+    border: px solid black;
 }
 
 aside .btn2 {
     margin: -10px 45px 50px -166px;
-    font-size: 19px;
+    font-size: 14px;
     font-weight: 600;
     position: absolute;
-    top: 1025%;
-    left: 114%;
-    padding: 6px;
-    width: 12%;
+    top: 45%;
+    left: 29%;
+    height: 7vh;
+    padding: 5.7px;
+    width: 16%;
 }
 
 /* AboutMe Page Styling */
 .content1 {
-    margin: 7px 70px 20px 90px;
+    margin: 7px 0px 20px 10px;
     width: 100%;
     height: 70vh;
+    position: relative;
+    left: -19%;
+    top: 0;
 }
 
 .content1 h1 {
@@ -199,12 +212,17 @@ aside .btn2 {
 
 .content1 ul p {
     margin: -34px 60px 59px 50px;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 238x;
 
 }
 
 .img1 {
     margin: 0 -30px 0 0;
+    width: 0%;
+    position: relative;
+    top: -10%;
+    left: 15%;
 }
 
 /* Download button  */
@@ -216,7 +234,7 @@ aside .btn2 {
     border: 4px solid black;
 }
 
-#my_iframe {
+/* #my_iframe {
     display: none;
     border: 1px solid black;
     width: 25%;
@@ -224,28 +242,33 @@ aside .btn2 {
     position: absolute;
     top: 261px;
     margin: 0 189px -95px 99px;
-}
+} */
 
 .content2 {
-    margin: 109px 19px 60px 200px;
-    width: 100%;
+    margin: 109px -109px 120px 20px;
+    width: 90%;
     position: relative;
     height: 100vh;
     bottom: -60%;
+    left: 51%;
 }
 
 .content2 h3 {
-    margin: -25px -27px -10px 137px;
-    font-size: 55px;
+    margin: 25px 127px -10px -67px;
+    font-size: 45px;
     font-weight: 600;
     width: 100%;
     text-align: center;
+    position: relative;
+    top: 0%;
+    left: 10%;
 }
 
 .content2 ul li {
-    margin: 44px -123px 0 13px;
-    font-size: 20px;
+    margin: 44px 223px 44px 103px;
+    font-size: 18px;
     font-weight: 600;
+    line-height: 39px;
 }
 
 /* ContactMe Page Styling */
@@ -294,15 +317,15 @@ input[type=sumbit]:hover {
 }
 
 .flex {
-    margin: 490px -910px 405px 90px;
+    margin: -150px -910px 405px 90px;
     position: fixed;
-    left: 70%;
-    bottom: 50%;
+    left: 97%;
+    bottom: 10%;
     height: 7vh;
-    width: 70%;
+    width: 40%;
 }
 
-aside h2 {
+.flex h2 {
     font-size: 29px;
     font-weight: 500;
     margin: 0 82px 0;
@@ -310,9 +333,9 @@ aside h2 {
 
 .box {
     height: 30vh;
-    width: 100%;
+    width: 80%;
     margin: 20px 70px 0 87px;
-    text-align: center;
+    /* text-align: center; */
     border: 1px solid #000000;
     border-radius: 7px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -321,7 +344,7 @@ aside h2 {
 .box ul li {
     list-style: none;
     /* padding: 145px 0 -445px; */
-    margin: 470px 0 -390px;
+    margin: 470px 50px -390px 180px;
     /* height: 4vh; */
 
 
@@ -334,9 +357,14 @@ aside h2 {
     font-size: 26px;
     display: inline-block;
     position: relative;
-    left: 115%;
+    left: 15%;
     bottom: 50%;
-    margin: 100px 20px 0px 358px;
+    margin: 100px 110px 0px -108px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .icon {
@@ -352,7 +380,7 @@ aside h2 {
 }
 
 .google {
-    margin: 42px 70px -89px 0;
+    margin: -42px 70px -69px 0;
 }
 
 /* Button  Styling */
@@ -386,6 +414,8 @@ button {
     height: 6vh;
     padding: 0 0px;
     border: 4px solid black;
+    position: relative;
+    left: -5%;
 }
 
 .btn:hover {
@@ -393,3 +423,328 @@ button {
     color: #ffffff;
     transition: 5ms ease-in-out;
 }
+
+
+@media (max-width: 900px) {
+   body{
+    width: 50%;
+    height: 65vh;
+   }
+
+   .topnav a.menu-icon{
+    float: left;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: -90%;
+   }
+   .topnav .responsive a {
+    position: relative;
+   }
+   .topnav .responsive a.menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+   }
+   .topnav a:not(first-child){
+    display: none;
+   }
+   .topnav .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+   }
+
+   /* Home page */
+   .rectangle{
+    display: none;
+   }
+
+   .content{
+    width: 80%;
+    position: relative;
+    left: 32%;
+    top: -75%;
+   }
+
+   .img{
+    width: 0%;
+    position: absolute;
+    left: 55%;
+    top: 90%;
+   }
+
+   .btn3{
+    width: 20%;
+    height: 7vh;
+    transform: translate(5%, 9%);
+   }
+
+
+   /* Project Page */
+   .img2{
+    width: 7%;
+    position: relative;
+    bottom: 6%;
+    left: 0;
+    padding: 78px 0;
+   }
+
+   #image1{
+    width: 20%;
+    height: 20vh;
+    margin: 10px 0;
+    padding: 97px;
+    transform: translate(-74%, -210%);
+   }
+   #image2{
+    width: 20%;
+    height: 30vh;
+    margin: 190px 0;
+    padding: 97px;
+    transform: translate(0%, -150%);
+   }
+
+   #image3{
+    width: 20%;
+    height: 30vh;
+    margin: 160px 0;
+    padding: 97px;
+    transform: translate(0%, -20%);
+   }
+
+   #image4{
+    width: 20%;
+    height: 30vh;
+    margin: 165px 0;
+    padding: 97px;
+    transform: translate(0%, 140%);
+   }
+   #image5{
+    width: 20%;
+    height: 30vh;
+    margin: 160px 0;
+    padding: 97px;
+    transform: translate(0%, 275%);
+   }
+   #image6{
+    width: 20%;
+    height: 30vh;
+    margin: 260px 0;
+    padding: 97px;
+    transform: translate(0%, 350%);
+   }
+   #image7{
+    width: 50%;
+    height: 53vh;
+    margin: 160px 0;
+    padding: 97px;
+    transform: translate(0%, 285%);
+   }
+   #context1{
+    margin: 99px 0 0;
+    height: 20vh;
+    transform: translate(4%, 76%);
+   }
+   #context2{
+    margin: 96px 0 0;
+    height: 45vh;
+    transform: translate(4%, 135%);
+   }
+   #context3{
+    margin: 96px 0 0;
+    height: 35vh;
+    transform: translate(4%, 296%);
+   }
+   #context4{
+    margin: 126px 0 0;
+    height: 35vh;
+    transform: translate(4%, 416%);
+   }
+   #context5{
+    margin: 126px 0 0;
+    height: 45vh;
+    transform: translate(4%, 396%);
+   }
+   #context6{
+    margin: 176px 0 0;
+    height: 45vh;
+    transform: translate(4%, 466%);
+   }
+   #context7{
+    margin: 296px 0 0;
+    height: 45vh;
+    transform: translate(-20%, 546%);
+   }
+
+  .container1 .img3{
+    width: 0px;
+    position: relative;
+    left: -70%;
+    top: 40%;
+   } 
+   .img4{
+    position: relative;
+    left: -60%;
+    top: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 56%;
+    padding: 196px 0 678px;
+    align-items: center;
+   } 
+   .container1 aside{
+    width: 100%;
+    height: 54vh;
+    position: relative;
+    padding: 57px 0px;
+    margin-top: 60px;
+    left: -65%;
+    top: 30%;
+    /* text-align: center; */
+   }
+   .container1 aside ul li p{
+    font-size: 2px;
+    width: 10%;
+   }
+   .container1 aside .btn{
+    width: 22%;
+    height: 7vh;
+   }
+   .container1 aside .btn1{
+    width: 34%;
+    height: 7vh;
+   }
+   .container1 aside .btn2{
+    width: 34%;
+    height: 7vh;
+    position: relative;
+    top: 25%;
+    left: -7%;
+    transform: translate(7%, 130%);
+   }
+
+   /* About Me Page */
+   .content1 {
+    width: 80%;
+    font-size: 4px;
+    transform: translate(12%, 0%);
+   }
+   .content1 h3 {
+    font-size: 27px;
+   }
+   .content1 ul p {
+    font-size: 24px;
+    width: 95%;
+   }
+   .img1{
+    width: 0%;
+    position: absolute;
+    left: 60%;
+    top: 135%;
+   }
+
+   .content2{
+    width: 100%;
+    position: relative;
+    top: 255%;
+    left: 45%;
+    height: 60vh;
+   }
+  .content2 h3{
+    font-size: 35px;
+   }
+   .content2 ul li {
+    width: 79%;
+    font-size: 20px;
+   }
+   
+  
+   /* ContactMe Page Styling */
+   section{
+    width: 72%;
+   }
+   form{
+    margin: 0 35px 0 149px;
+    width: 80%;
+    transform: translate(56%, 0%);
+   }
+   input[type=sumbit] {
+    width: 25%;
+   }
+
+   .flex{
+    width: 75%;
+    height: 69vh;
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    padding: 50px 0;
+   }
+  
+   .flex ul li {
+    font-size: 15px;
+    width: 30%;
+    margin: -40px 0 125px 0;
+    position: relative;
+    top: 10%;
+    left: 37%;
+   }
+   .box{
+    height: 35vh;
+    width: 100%;
+    margin-bottom: 526px;
+    
+   }
+   .icon{
+    width: 7%;
+    margin: 44px 0 0 79px;
+   }
+   
+
+}
+
+
+@media(max-width: 600px) {
+    body{
+        width: 55%;
+    }
+    .topnav a.menu-icon{
+        transform: translate(-70%, 0%);
+    }
+    .container1 aside .btn{
+        height: 5vh;
+        width: 30%;
+    }
+    .content{
+        width: 90%;
+        font-size: 24px;
+    }
+    .img1{
+        transform: translate(-29%, 40%);
+    }
+    .content1{
+        width: 90%;
+    }
+    .content2{
+        transform: translate(0%, 50%);
+    }
+    .content2 h3{
+        font-size: 25px;
+    }
+    .btn3{
+        height: 7.5vh;
+    }
+    form{
+        transform: translate(34%,0%);
+    }
+    .flex{
+       width: 70%;
+       transform: translate(-7%, 5%);
+    }
+    .flex h2{
+        font-size: 23px;
+    }
+}
+

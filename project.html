@@ -5,25 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8bc8aded76.js" crossorigin="anonymous"></script>
 </head>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html" class="active">Projects</a></li>
-                <li><a href="aboutMe.html">About Me</a></li>
-                <li><a href="contactMe.html">Contact Me</a></li>
-            </ul>
-        </nav>
-     </header>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
+            <i class="material-icons">menu</i>
+        </a>  
+        <a href="index.html" >Home</a>
+        <a href="project.html"  class="active">Projects</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+    </div>
      <main>
         <div class="container1">
-            <section class="img2 img3">
+            <section class="img2 img3" id="image1">
                 <img src="./Images/Group 7304.png" alt="kay-wallet">
             </section>
-            <aside>
+            <aside id="context1">
                 <h3>KAY WALLET</h3>
                 <ul><p>KAY WALLET is a multi-chain web3 mobile app non-custodial wallet that allows users to manage digital assets sscattered across Ethereum, Binance, and Solana blockchain all in one place with a naming service for each chain.</p></ul>
                 <ul><p>PRODUCT:WEB3.0  ||  DEFI Wallet</p></ul>
@@ -33,10 +44,10 @@
             </aside>
         </div>
         <div class="container1">
-            <section class="img2 img4">
+            <section class="img2 img4" id="image2">
                 <img src="./Images/Group 32931.png" alt="artly-nft-marketplace">
             </section>
-            <aside>
+            <aside id="context2">
                 <h3>ARTLY NFT MARKETPLACE</h3>
                 <ul><p>A User-Friendly marketplace onboarding users into the NFTand web3 ecosystem</p></ul>
                 <ul><p>PRODUCT:WEB3.0  || NFT</p></ul>
@@ -46,10 +57,10 @@
             </aside>
         </div>
         <div class="container1">
-            <section class="img2 img4">
+            <section class="img2 img4" id="image3">
                 <img src="./Images/Group 32933.png" alt="chat-to-earn">
             </section>
-            <aside>
+            <aside id="context3">
                 <h3>CHAT TO EARN</h3>
                 <ul><p>CHATN IS A WEB 3 MESSAGING  APP
                     WITH SOCIAL-FI AND GAME-FI ELEMENTS</p></ul>
@@ -62,10 +73,10 @@
             </aside>
         </div>
         <div class="container1">
-            <section class="img2 img4">
+            <section class="img2 img4" id="image4">
                 <img src="./Images/Group 32934.png" alt="clean-it-mobile-app">
             </section>
-            <aside>
+            <aside id="context4">
                 <h3>CLEAN IT MOBILE APP</h3>
                 <ul><p>CleanIT is a digital product that provides cleaning services and allows users to search for professional cleaners who use Eco-Friendly supplies.</p>
                 </ul>
@@ -76,10 +87,10 @@
             </aside>
         </div>
         <div class="container1">
-            <section class="img2 img4">
+            <section class="img2 img4" id="image5">
                 <img src="./Images/Group 32932.png" alt="kaydex-website">
             </section>
-            <aside>
+            <aside id="context5">
                 <h3>KAYDEX WEBSITE</h3>
                 <ul><p>A Decentralized exchange on the Solana ecosystem with some new features</p></ul>
                 <ul><p>PRODUCT:WEB3.0 || DEX</p></ul>
@@ -89,10 +100,10 @@
             </aside>
         </div>
         <div class="container1">
-            <section class="img2 img4">
+            <section class="img2 img4" id="image6">
                 <img src="./Images/Mockup/Dark.png" alt="Icebreaker-nft-website">
             </section>
-            <aside>
+            <aside id="context6">
                 <h3>Icebreaker NFT WEBSITE</h3>
                 <ul><p>Building the ICEBRARY , the first hub to original stories on solana.</p></ul>
                 <ul>
@@ -104,10 +115,10 @@
             </aside>
         </div>
         <div class="container1">
-            <section class="img2 img4">
+            <section class="img2 img4" id="image7">
                 <img src="./Images/Rectangle 35.png" alt="Travel-agency">
             </section>
-            <aside>
+            <aside id="context7">
                 <h3>TRAVEL AGENCY WEBSITE</h3>
                 <ul><p>A Travel Agency Website where you can book flights easily and also discover new places.</p></ul>
                 <ul><p>PRODUCT: TRAVELS</p></ul>
@@ -115,6 +126,7 @@
                 <button class="btn btn2" onclick="location.href='https://www.figma.com/proto/6gJVWdjOCtcoUa3K83NUW3/TRAVEL-AGENCY-WEBSITE-DESIGN?page-id=0%3A1&node-id=704%3A6&viewport=-103%2C687%2C0.4&scaling=min-zoom&starting-point-node-id=704%3A6'">view</button>
             </aside>
         </div>
-     </main>
+    </main>
+     <script src="./script.js"></script>
 </body>
 </html>
