@@ -192,23 +192,23 @@ aside {
 }
 #context2{
     position: relative;
-    top: -34%;
+    top: -32%;
 }
 #context3{
     position: relative;
-    top: -35%;
+    top: -34%;
 }
 #context4{
     position: relative;
-    top: -25%;
+    top: -24%;
 }
 #context5{
     position: relative;
-    top: -27%;
+    top: -26%;
 }
 #context6{
     position: relative;
-    top: -28%;
+    top: -27%;
 }
 #context7{
     position: relative;
@@ -257,17 +257,17 @@ aside .btn2 {
     height: 70vh;
     position: relative;
     left: -1%;
-    top: 0;
+    top: 34%;
 }
 
 .content1 h1 {
-    margin: 9px 30px 0px 100px;
+    margin: 19px 30px 0px 100px;
     width: 90%;
     font-size: 32px;
 }
 
 .content1 h3 {
-    margin: -9px 50px 50px 100px;
+    margin: 13px 50px 0px 100px;
     width: 100%;
     font-size: 30px;
 }
@@ -279,7 +279,7 @@ aside .btn2 {
 .content1 ul p {
     margin: -34px 60px 59px 50px;
     font-weight: 500;
-    font-size: 238x;
+    font-size: 23px;
 
 }
 
@@ -293,7 +293,7 @@ aside .btn2 {
 
 /* Download button  */
 .content1 .btn {
-    margin: -10px 9px 50px 98px;
+    margin: -20px 9px 50px 98px;
     width: 30%;
     font-size: 16px;
     font-weight: 700;
