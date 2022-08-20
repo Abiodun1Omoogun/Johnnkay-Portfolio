@@ -710,7 +710,7 @@ button {
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 700px) {
     body{
         width: 50%;
     }
@@ -727,16 +727,20 @@ button {
     }
     .content{
         width: 90%;
-        font-size: 14px;
+        font-size: 24px;
     }
     .content h1{
-        font-size: 33px;
+        font-size: 27px;
     }
     .content h3{
         font-size: 22px;
     }
     .content p{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .content .btn3{
+        width: 45%;
+        height: 9vh;
     }
     .img{
         width: 0;
