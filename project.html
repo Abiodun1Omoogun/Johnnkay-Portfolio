@@ -11,9 +11,10 @@
 </head>
 <script>
     function myFunction() {
-      var x = document.getElementById("myTopnav");
+      var x = document.getElementById("myTopNav");
       if (x.className === "topnav") {
         x.className += " responsive";
+        console.log(x.className);
       } else {
         x.className = "topnav";
       }
