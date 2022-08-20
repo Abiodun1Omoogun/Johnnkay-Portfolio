@@ -92,14 +92,14 @@ h1 {
     color: #000;
     font-size: 40px;
     font-weight: 500;
-    line-height: 89px;
+    line-height: 49px;
 }
 
 h3 {
     color: #301b1b;
     font-size: 29px;
     font-weight: 700;
-    line-height: 75px;
+    line-height: 95px;
 }
 
 p {
@@ -192,23 +192,23 @@ aside {
 }
 #context2{
     position: relative;
-    top: -30%;
+    top: -34%;
 }
 #context3{
     position: relative;
-    top: -31%;
+    top: -35%;
 }
 #context4{
     position: relative;
-    top: -21%;
+    top: -25%;
 }
 #context5{
     position: relative;
-    top: -24%;
+    top: -27%;
 }
 #context6{
     position: relative;
-    top: -24%;
+    top: -28%;
 }
 #context7{
     position: relative;
@@ -247,7 +247,7 @@ aside .btn2 {
     top: 48%;
     left: 32%;
     height: 7vh;
-    width: 25%;
+    width: 20%;
 }
 
 /* AboutMe Page Styling */
@@ -333,7 +333,7 @@ aside .btn2 {
 .content2 ul li {
     margin: 44px 223px 44px 103px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 39px;
 }
 
