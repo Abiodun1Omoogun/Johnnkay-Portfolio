@@ -2,15 +2,17 @@
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="Cache-control" content="public"> -->
-<!-- <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" /> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact Me</title>
     <script src="https://cdn.tailwindcss.com/" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
+    <script src="./tailwind.config.js"></script>
     <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -22,8 +24,8 @@
         }
         </script>  
 </head>
-<body>
-    <div class="topnav" id="myTopnav">
+<body class="p-5 bg-white relative p-8 md:h-4 left-90 top-0">
+    <div class="text-gray text-3xl p29" id="myTopnav">
         <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
             <i class="material-icons">menu</i>
         </a>  
@@ -37,20 +39,20 @@
             <section>
                 <form method="post" action="malito:johnkayode2002@gmail.com" enctype="text/plain">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" >
 
                     <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text">
 
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="6"></textarea>
                     
-                    <input type="sumbit" value="send">
+                    <input type="sumbit" class="bg-black my-6 py-15 w-32 h-12 hover:bg-transparent hover:text-black text-2xl text-white rounded-xl" value="send">
                 </form>
 
             </section>
             <aside class="flex">
-                <h2>More ways to contact me</h2>
+                <h2 class="fa-2xl w-35 text-black my-5 text-5xl font-san">More ways to contact me</h2>
                 <div class="box">
                     <div class="icon">
                         <img src="./Images/call-icon.svg" alt="call-icon" class="call">
@@ -64,7 +66,7 @@
             </aside>
         </div>
         <div class="icons">
-            <i class="fa-bands fa-behance"onclick="location.href='https://www.behance.net/johnkayode.com'">twitter</i>
+            <i class="fa-bands fa-square-behance" onclick="location.href='https://www.behance.net/johnkayode.com'">twitter</i>
             <i class="fa-brands fa-square-twitter" onclick="location.href='https://twitter.com/johnkayode6.com'"></i>
             <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/john-omoogun-0b1422207.com'"></i>
         </div>
