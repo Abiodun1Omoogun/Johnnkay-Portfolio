@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact Me</title>
-    <script src="https://cdn.tailwindcss.com/" ></script>
+    <script src="https://cdn.tailwindcss.com?plugin=topography" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -25,50 +25,50 @@
         </script>  
 </head>
 <body class="p-5 bg-white relative p-8 md:h-4 left-90 top-0">
-    <div class="text-gray text-3xl p29" id="myTopnav">
+    <div class="text-gray text-lg p29" id="myTopnav">
         <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
             <i class="material-icons">menu</i>
         </a>  
-        <a href="index.html">Home</a>
-        <a href="project.html">Projects</a>
-        <a href="aboutMe.html">About Me</a>
-        <a href="contactMe.html"  class="active">Contact Me</a>
+        <a href="index.html" class="mx-2">Home</a>
+        <a href="project.html" class="mx-2">Projects</a>
+        <a href="aboutMe.html" class="mx-2">About Me</a>
+        <a href="contactMe.html"  class="active mx-2">Contact Me</a>
     </div>
-     <main>
+     <main class="py-9 w-78 h-34">
         <div class="container">
-            <section>
-                <form method="post" action="malito:johnkayode2002@gmail.com" enctype="text/plain">
-                    <label for="name">Name</label>
-                    <input type="text" >
+            <section class="w-32 mx-7">
+                <form method="post" class="w-32" action="malito:johnkayode2002@gmail.com" enctype="text/plain">
+                    <label for="name" class="text-xl my-9">Name</label>
+                    <input type="text" class="border h-9 my-4 w-72 border-black rounded-lg">
 
-                    <label for="email">E-mail</label>
-                    <input type="text">
+                    <label for="email" class="text-xl my-9">E-mail</label>
+                    <input type="text" class="border h-9 my-4 w-72 border-black rounded-lg">
 
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="6"></textarea>
+                    <label for="message" class="text-xl my-9">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="6" class="border my-4 w-72 border-black rounded-lg"></textarea>
                     
-                    <input type="sumbit" class="bg-black my-6 py-15 w-32 h-12 hover:bg-transparent hover:text-black text-2xl text-white rounded-xl" value="send">
+                    <input type="sumbit" class="bg-black my-6 py-15 text-center w-32 h-12 hover:bg-transparent hover:text-white text-2xl text-white rounded-xl" value="Send">
                 </form>
 
             </section>
-            <aside class="flex">
-                <h2 class="fa-2xl w-35 text-black my-5 text-5xl font-san">More ways to contact me</h2>
-                <div class="box">
-                    <div class="icon">
-                        <img src="./Images/call-icon.svg" alt="call-icon" class="call">
-                        <img src="./Images/google-icon.svg" alt="google-icon" class="google">
+            <aside class="container relative">
+                <h2 class="fa-2xl w-35 text-black my-5 text-2xl font-san">More ways to contact me</h2>
+                <div class="container  my-10 border border-black rounded-lg">
+                    <div class="m-5">
+                        <img src="./Images/call-icon.svg" alt="call-icon" class="my-9">
+                        <img src="./Images/google-icon.svg" alt="google-icon" class="">
                     </div>
-                    <ul>
-                        <li>+2348108549153</li>
-                        <li>johnkayode2002@gmail.com</li>
+                    <ul class="absolute top-16 right-9">
+                        <li class=" p-45 w-42 my-12 text-lg font-san h-42 ">+2348108549153</li>
+                        <li class=" p-45 w-42 my-9 text-lg font-san h-42 ">johnkayode2002@gmail.com</li>
                     </ul>
                 </div>
             </aside>
         </div>
         <div class="icons">
-            <i class="fa-bands fa-square-behance" onclick="location.href='https://www.behance.net/johnkayode.com'">twitter</i>
-            <i class="fa-brands fa-square-twitter" onclick="location.href='https://twitter.com/johnkayode6.com'"></i>
-            <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/john-omoogun-0b1422207.com'"></i>
+            <i class="fa-brands fa-linkedin text-5xl" onclick="location.href='https://www.linkedin.com/in/john-omoogun-0b1422207.com'"></i>
+            <i class="fa-brands fa-square-twitter text-5xl" onclick="location.href='https://twitter.com/johnkayode6.com'"></i>
+            <i class="fa-brands fa-square-behance text-5xl" onclick="location.href='https://www.behance.net/johnkayode.com'"></i>
         </div>
     </main>
     <script src="./script.js"></script>
