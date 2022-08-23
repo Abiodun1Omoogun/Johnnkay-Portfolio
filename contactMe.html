@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./tailwind.config.js"></script>
+    <script src="./contact.js"></script>
 </head>
 <body class="bg-white fa-xl:w-16 font-medium text-md p-22 font-san w-22  relative p-8  left-90 top-0 flex flex-col">
     <div class="text-gray text-md  text-gray md:absolute md:right-40 md:h-4 md:top-2 md:m-7 md:w-100 xl:text-xl xl:translate-x-20" id="myTopnav">
@@ -25,15 +26,15 @@
             <section class="w-32 mx-1  ">
                 <form method="post" class="w-32" action="malito:johnkayode2002@gmail.com" enctype="text/plain">
                     <label for="name" class="text-xl my-9">Name</label>
-                    <input type="text" class="border h-9 my-4 w-72 border-black rounded-lg">
+                    <input type="text" id="name" class="border h-9 my-4 w-72 border-black rounded-lg" required>
 
                     <label for="email" class="text-xl my-9">E-mail</label>
-                    <input type="text" class="border h-9 my-4 w-72 border-black rounded-lg">
+                    <input type="text" id="email" class="border h-9 my-4 w-72 border-black rounded-lg" required>
 
                     <label for="message" class="text-xl my-9">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="6" class="border my-4 w-72 border-black rounded-lg"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="6" class="border my-4 w-72 border-black rounded-lg" required></textarea>
                     
-                    <input type="sumbit" class="bg-black my-6 py-15 text-center w-32 h-12 hover:bg-transparent hover:text-black text-xl text-white border border-4 border-black rounded-xl" onclick= "document.location =  'mailto:johnkayode2002@gmail.com'"" value="Send">
+                    <input type="sumbit" class="bg-black my-6 py-15 text-center w-32 h-12 hover:bg-transparent hover:text-black text-xl text-white border border-4 border-black rounded-xl"  value="Send">
                 </form>
 
             </section>
