@@ -9,6 +9,6 @@ tailwind.config = {
         fontFamily: {
           san: ['Poppins', 'san-serif'],
         },
-      }
     }
   }
+} 
