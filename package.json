@@ -1,0 +1,27 @@
+{
+  "name": "johnnkay-portfolio",
+  "version": "1.0config.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abiodun1Omoogun/Johnnkay-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "Abiodun1Omoogun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abiodun1Omoogun/Johnnkay-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Abiodun1Omoogun/Johnnkay-Portfolio#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "multiparty": "^4.2.3",
+    "nodemailer": "^6.8.0"
+  }
+}

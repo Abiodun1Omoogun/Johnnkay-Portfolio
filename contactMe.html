@@ -24,7 +24,7 @@
      <main class="py-9 w-78 h-34 self-center w-full max-w-5xl">
         <div class="container md:my-16 md:w-100 md:flex md:flex-row md:justify-center">
             <section class="w-32 mx-1 md:flex-1 ">
-                <form method="post" class="w-32" action="mail.php" enctype="text/plain">
+                <form method="POST" id="contact-form" class="w-32" action="send" enctype="multipart/form-data">
                     <label for="name" class="text-xl my-9">Name</label>
                     <input type="text" name="name" id="name" class="border h-9 my-4 w-72 border-black rounded-lg" required>
 
@@ -57,6 +57,6 @@
             <a href="https://www.behance.net/johnkayode" class="fa-brands fa-square-behance hover:opacity-75 text-5xl"></a>
         </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
