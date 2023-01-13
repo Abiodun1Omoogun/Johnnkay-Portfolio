@@ -3,7 +3,7 @@ tailwind.config  = {
     extend: {
       colors: {
         black: '#000',
-        gray: 'gray',
+        gray: '#404040',
         transparent: 'trannsparent',
         purewhite: 'rgba(255, 255, 255, 1)',
       },
