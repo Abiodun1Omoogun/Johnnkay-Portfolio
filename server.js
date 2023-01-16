@@ -63,6 +63,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const iparty = require("multiparty");
+require("dotenv").config();
 
 // create an express app
 const app = express();
@@ -72,8 +73,8 @@ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   auth: {
-    user: "your-email@gmail.com", // replace with your email address
-    pass: "your-password" // replace with your password
+    user: process.env.EMAIL, // replace with your email address
+    pass: process.env.PASS, // replace with your password
   }
 });
 
@@ -115,6 +116,7 @@ app.post("/send", (req, res) => {
           console.log(err);
           res.status(500).send("Something went wrong.");
         } else {
+          console.log("Email sent sucessfully");
           res.status(200).send("Email successfully sent to recipient!");
         }
       });
